@@ -10,7 +10,7 @@ http://www.machinelearning.ru/
 
 but algo 1.2 from http://www.machinelearning.ru/ doest't work correct
 
-![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_3.png)
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_4.png)
 
 
 
