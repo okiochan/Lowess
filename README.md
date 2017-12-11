@@ -1,13 +1,13 @@
 # Lowess
-(algorithm for for modeling and smoothing 2D data)
+(алгоритм для моделирования и сглаживания двумерных данных )
 
-# examples of Loweless with weighth regression
-algorithm was taken from goo.gl/sV6wNA (algo 1.1)
+# пример Loweless со взвешенной регрессией
+полное описание алгоритма [здесь]goo.gl/sV6wNA (Алгоритм 1.1)
 
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_1.png)
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_2.png)
 
-but algo 1.2 from goo.gl/sV6wNA doest't work correct
+Из [этой]goo.gl/sV6wNA же статьи, Алгоритм 1.2 не заработал корректно
 
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_4.png)
 
