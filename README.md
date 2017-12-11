@@ -1,4 +1,5 @@
 # Lowess
+(algorithm for for modeling and smoothing 2D data)
 
 # examples of Loweless with weighth regression
 algorithm was taken from goo.gl/sV6wNA (algo 1.1)
