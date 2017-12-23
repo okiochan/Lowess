@@ -6,11 +6,13 @@
 
 (выборка содержится в файле **data.py**, для вызова - воспользуйтесь командой *X,Y = data.DataBuilder().Build("poisson")* )
 
+код программы [здесь]( https://github.com/okiochan/Lowess/blob/master/LowessGood.py)
+
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_1.png)
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_2.png)
 
-# Алгоритм 1.2
 
 # классический Loweless
+код программы [здесь]( https://github.com/okiochan/Lowess/blob/master/lowess.py)
 
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png)
