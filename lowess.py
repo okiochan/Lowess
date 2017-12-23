@@ -18,7 +18,7 @@ def K1(z):
     else:
         return 0
 
-def nadaray(X,Y, h=0.5, ro=euclidean):
+def nadaray(X,Y, h=0.9, ro=euclidean):
     n = X.size
     Yt = np.zeros(n)
     for t in range(n):
@@ -56,9 +56,9 @@ def lowess(X,Y, MAX=2, h=0.9, ro=euclidean):
     return Yt
 
 
-# X, Y = data.DataBuilder().Build("poisson")
-# X, Y = data.DataBuilder().Build("wavelet")
-X, Y = data.DataBuilder().Build("degenerate")
+X, Y = data.DataBuilder().Build("poisson")
+#X, Y = data.DataBuilder().Build("wavelet")
+# X, Y = data.DataBuilder().Build("degenerate")
 
 np.set_printoptions(formatter={'float':lambda x: '%.4f' % x})
 Yt1 = lowess(X,Y)
