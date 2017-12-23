@@ -11,4 +11,6 @@
 
 # Алгоритм 1.2
 
+# классический Loweless
 
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png)
