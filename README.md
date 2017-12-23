@@ -15,6 +15,6 @@
 # классический Loweless
 код программы [здесь]( https://github.com/okiochan/Lowess/blob/master/lowess.py)
 
-![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png)
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_12.png)
 
