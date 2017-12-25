@@ -6,6 +6,13 @@
 (выборки содержатся в файле **data.py**, для вызова - воспользуйтесь командой *X,Y = data.DataBuilder().Build("имя выборки")* )
 
 # классический Loweless
+
+можно посчитать новые Y по формуле Надарая-Ватсона:
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/h1.png)
+
+формула Lowess выглядит так (добавляются настраевыемые gamma): 
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/h2.png)
+
 код программы [здесь]( https://github.com/okiochan/Lowess/blob/master/lowess.py)
 
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png)
