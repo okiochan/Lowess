@@ -4,6 +4,7 @@
 полное описание алгоритма [здесь]( http://www.machinelearning.ru/wiki/index.php?title=%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_LOWESS)
 
 (выборки содержатся в файле **data.py**, для вызова - воспользуйтесь командой *X,Y = data.DataBuilder().Build("имя выборки")* )
+(имена выборок: "poisson", "wavelet",degenerate")
 
 # классический Loweless
 
