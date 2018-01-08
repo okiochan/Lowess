@@ -13,7 +13,7 @@ X,Y = data.DataBuilder().Build("имя выборки")
 # метод Надарая-Ватсона
 
 Реализована основная формула Надарая-Ватсона:
-![](https://raw.githubusercontent.com/okiochan/Lowess/master/h1.gif)
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/formula/h1.gif)
 
 код программы в **lowess.py**
 
