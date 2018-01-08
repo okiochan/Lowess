@@ -57,8 +57,8 @@ X, Y = dataLowess.DataBuilder().Build("wavelet")
 np.set_printoptions(formatter={'float':lambda x: '%.4f' % x})
 
 Yt1 = lowess(X,Y,MAX=2, h=0.6, K=Kgauss, K1 = Kquad)
-Yt2 = nadaray(X,Y, h=0.6, K=Kgauss)
-Yt3 = nadaray(X,Y, h=0.6, K=Kquad)
+Yt2 = nadaray(X,Y, h=0.2, K=Kgauss)
+Yt3 = nadaray(X,Y, h=0.2, K=Kquad)
 
 # print("Lowess")
 # print(QuadraticError(Y, Yt1))

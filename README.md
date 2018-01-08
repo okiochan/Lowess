@@ -22,7 +22,7 @@ X,Y = data.DataBuilder().Build("имя выборки")
 nadaray(X,Y, h, K, ro=euclidean)
 ```
 
-Примеры работы программы с гауссовским	и	квартическим	ядрами.
+Примеры работы программы с гауссовским	и	квартическим	ядрами (был взят h = 0.6).
 
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad1.png)
 
@@ -34,6 +34,13 @@ nadaray(X,Y, h, K, ro=euclidean)
 на выборке "wavelet", ошибка:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad22.png)
 
+Также, мы видим, что чем выше h, тем лучше сглаживание:
+
+#### h = 0.9
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/hbig.png)
+
+#### h = 0.2
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/hsmall.png)
 
 
 # классический Loweless
