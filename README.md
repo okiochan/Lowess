@@ -43,6 +43,8 @@ X,Y = data.DataBuilder().Build("имя выборки")
 Среднеквадратичная ошибка
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/ssse2.png)
 
+Мы видим, что Lowess сглаживает выборку сильнее, чем метод Надарая - Ватсона
+
 # пример Loweless со взвешенной регрессией
 
 код программы  в **LowessGood.py**
