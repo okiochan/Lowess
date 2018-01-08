@@ -37,9 +37,11 @@ nadaray(X,Y, h, K, ro=euclidean)
 Также, мы видим, что чем выше h, тем лучше сглаживание:
 
 **h = 0.9**
+
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/hbig.png)
 
 **h = 0.2**
+
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/hsmall.png)
 
 Вот еще интересный пример:
@@ -49,7 +51,7 @@ nadaray(X,Y, h, K, ro=euclidean)
 на выборке "degenerate", ошибка:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad33.png)
 
-# классический Loweless
+# Loweless
 
 можно посчитать новые Y по формуле Надарая-Ватсона:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/h1.gif)
@@ -64,29 +66,25 @@ Lowess метод, принимает X,Y - выборку, MAX - кол-во и
 lowess(X,Y, MAX, h, K, K1, ro=euclidean)
 ```
 
-
 Посмотрим как отрабатывают оба алгоритма:
 
-Пример работы на выборке "degenerate"
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png)
-Среднеквадратичная ошибка
+
+на выборке "degenerate", Среднеквадратичная ошибка
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/ssse.png)
 
-Пример работы на выборке "wavelet"
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_12.png)
 
-Среднеквадратичная ошибка
+выборке "wavelet", cреднеквадратичная ошибка
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/ssse1.png)
 
-Пример работы на выборке "poisson"
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_13.png)
 
-Среднеквадратичная ошибка
+на выборке "poisson", cреднеквадратичная ошибка
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/ssse2.png)
 
-Мы видим, что Lowess сглаживает выборку сильнее, чем метод Надарая - Ватсона
 
-# пример Loweless со взвешенной регрессией
+# Loweless со взвешенной регрессией
 
 код программы  в **LowessGood.py**
 
