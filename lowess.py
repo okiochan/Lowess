@@ -50,8 +50,8 @@ def lowess(X,Y, MAX, h, K, K1, ro=euclidean):
     return Yt
 
 
-X, Y = dataLowess.DataBuilder().Build("poisson")
-# X, Y = dataLowess.DataBuilder().Build("wavelet")
+#X, Y = dataLowess.DataBuilder().Build("poisson")
+X, Y = dataLowess.DataBuilder().Build("wavelet")
 #X, Y = dataLowess.DataBuilder().Build("degenerate")
 
 np.set_printoptions(formatter={'float':lambda x: '%.4f' % x})

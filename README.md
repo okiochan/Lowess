@@ -24,12 +24,17 @@ nadaray(X,Y, h, K, ro=euclidean)
 
 Примеры работы программы с гауссовским	и	квартическим	ядрами.
 
-на выборке "poisson"
-
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad1.png)
 
-ошибка:
+на выборке "poisson", ошибка:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad11.png)
+
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad2.png)
+
+на выборке "wavelet", ошибка:
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad22.png)
+
+
 
 # классический Loweless
 
