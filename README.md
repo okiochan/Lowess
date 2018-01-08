@@ -36,12 +36,18 @@ nadaray(X,Y, h, K, ro=euclidean)
 
 Также, мы видим, что чем выше h, тем лучше сглаживание:
 
-#### h = 0.9
+**h = 0.9**
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/hbig.png)
 
-#### h = 0.2
+**h = 0.2**
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/hsmall.png)
 
+Вот еще интересный пример:
+
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad3.png)
+
+на выборке "degenerate", ошибка:
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad33.png)
 
 # классический Loweless
 

@@ -51,14 +51,14 @@ def lowess(X,Y, MAX, h, K, K1, ro=euclidean):
 
 
 #X, Y = dataLowess.DataBuilder().Build("poisson")
-X, Y = dataLowess.DataBuilder().Build("wavelet")
-#X, Y = dataLowess.DataBuilder().Build("degenerate")
+#X, Y = dataLowess.DataBuilder().Build("wavelet")
+X, Y = dataLowess.DataBuilder().Build("degenerate")
 
 np.set_printoptions(formatter={'float':lambda x: '%.4f' % x})
 
 Yt1 = lowess(X,Y,MAX=2, h=0.6, K=Kgauss, K1 = Kquad)
-Yt2 = nadaray(X,Y, h=0.2, K=Kgauss)
-Yt3 = nadaray(X,Y, h=0.2, K=Kquad)
+Yt2 = nadaray(X,Y, h=0.6, K=Kgauss)
+Yt3 = nadaray(X,Y, h=0.6, K=Kquad)
 
 # print("Lowess")
 # print(QuadraticError(Y, Yt1))
