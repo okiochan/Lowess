@@ -26,8 +26,20 @@ X,Y = data.DataBuilder().Build("имя выборки")
 
 Посмотрим как отрабатывают оба алгоритма:
 
+Пример работы на выборке "degenerate"
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_11.png)
+Среднеквадратичная ошибка
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/sse.png)
+
+Пример работы на выборке "wavelet"
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_12.png)
+Среднеквадратичная ошибка
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/sse1.png)
+
+Пример работы на выборке "wavelet"
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/Figure_13.png)
+Среднеквадратичная ошибка
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/sse3.png)
 
 # пример Loweless со взвешенной регрессией
 
