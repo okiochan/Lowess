@@ -8,19 +8,19 @@ import matplotlib.patches as mpatches
 def euclidean(x,y):
     return np.sqrt(np.sum((x-y)**2))
 
-def K(r): #gauss
+def Kgauss(r): #gauss yadro
      return( ((2* math.pi)**( -0.5)) * math.exp(-0.5*r*r) );
 
-def K1(z):
-    if (abs(z) <= 1):
-        return (1-z**2)**2
+def Kquad(r): #qwadratic yadro
+    if (abs(r) <= 1):
+        return (1-r**2)**2
     else:
         return 0
 
 def QuadraticError(Y, Yt):
     return ((Yt-Y)**2).sum()
    
-def nadaray(X,Y, h=0.6, ro=euclidean):
+def nadaray(X,Y, h, K, ro=euclidean,):
     n = X.size
     Yt = np.zeros(n)
     for t in range(n):
@@ -30,7 +30,7 @@ def nadaray(X,Y, h=0.6, ro=euclidean):
         Yt[t] = sum(W*Y)/sum(W)
     return Yt
 
-def lowess(X,Y, MAX=2, h=0.6, ro=euclidean):
+def lowess(X,Y, MAX, h, K, K1, ro=euclidean):
     n = X.size
     delta = np.ones(n)
     Yt = np.zeros(n)
@@ -55,8 +55,8 @@ X, Y = dataLowess.DataBuilder().Build("poisson")
 #X, Y = dataLowess.DataBuilder().Build("degenerate")
 
 np.set_printoptions(formatter={'float':lambda x: '%.4f' % x})
-Yt1 = lowess(X,Y)
-Yt2 = nadaray(X,Y)
+Yt1 = lowess(X,Y,MAX=2, h=0.6, K=Kgauss, K1 = Kquad)
+Yt2 = nadaray(X,Y, h=0.6, K=Kgauss)
 
 print("Lowess")
 print(QuadraticError(Y, Yt1))
