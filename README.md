@@ -54,10 +54,10 @@ nadaray(X,Y, h, K, ro=euclidean)
 # Loweless
 
 можно посчитать новые Y по формуле Надарая-Ватсона:
-![](https://raw.githubusercontent.com/okiochan/Lowess/master/h1.gif)
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/formula/h1.gif)
 
 формула Lowess выглядит так (добавляются настраевыемые gamma): 
-![](https://raw.githubusercontent.com/okiochan/Lowess/master/h2.gif)
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/formula/h2.gif)
 
 код программы в **lowess.py**
 
