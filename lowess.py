@@ -51,22 +51,29 @@ def lowess(X,Y, MAX, h, K, K1, ro=euclidean):
 
 
 X, Y = dataLowess.DataBuilder().Build("poisson")
-#X, Y = dataLowess.DataBuilder().Build("wavelet")
+# X, Y = dataLowess.DataBuilder().Build("wavelet")
 #X, Y = dataLowess.DataBuilder().Build("degenerate")
 
 np.set_printoptions(formatter={'float':lambda x: '%.4f' % x})
+
 Yt1 = lowess(X,Y,MAX=2, h=0.6, K=Kgauss, K1 = Kquad)
 Yt2 = nadaray(X,Y, h=0.6, K=Kgauss)
+Yt3 = nadaray(X,Y, h=0.6, K=Kquad)
 
-print("Lowess")
-print(QuadraticError(Y, Yt1))
-print("Nadaray")
+# print("Lowess")
+# print(QuadraticError(Y, Yt1))
+print("Nadaray with gauss")
 print(QuadraticError(Y, Yt2))
+
+print("Nadaray with qwadratic")
+print(QuadraticError(Y, Yt3))
 
 
 plt.scatter(X,Y)
-plt.plot(X, Yt1, label='y pred', color = "orange")
+# plt.plot(X, Yt1, label='y pred', color = "orange")
 plt.plot(X, Yt2, label='y pred', color = "pink")
+plt.plot(X, Yt3, label='y pred', color = "red")
 
-plt.legend(handles=[mpatches.Patch(color='orange', label='Lowess'),mpatches.Patch(color='pink', label='Nadaray-Watson')])
+# plt.legend(handles=[mpatches.Patch(color='orange', label='Lowess'),mpatches.Patch(color='pink', label='Nadaray-Watson')])
+plt.legend(handles=[mpatches.Patch(color='red', label='Nadaray-Watson with K quadratic'),mpatches.Patch(color='pink', label='Nadaray-Watson with K gauss')])
 plt.show()

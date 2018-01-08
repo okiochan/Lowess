@@ -3,6 +3,32 @@
 
 полное описание можно прочесть здесь [здесь]( http://www.machinelearning.ru/wiki/index.php?title=%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_LOWESS)
 
+Рассматриваемые ниже выборки содержатся в файле **data.py**, для вызова - воспользуйтесь командой 
+```
+X,Y = data.DataBuilder().Build("имя выборки")
+```
+имена выборок: "poisson", "wavelet",degenerate"
+
+
+# метод Надарая-Ватсона
+
+Реализована основная формула Надарая-Ватсона:
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/h1.gif)
+
+код программы в **lowess.py**
+
+Нужно вызвать метод Надарая-Ватсона, он принимает: X,Y - выборку, h - коэф. сглаживания, ro - метрику, K - функцию ядра
+```
+nadaray(X,Y, h, K, ro=euclidean)
+```
+
+Примеры работы программы с гауссовским	и	квартическим	ядрами.
+
+на выборке "poisson"
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad1.png)
+
+ошибка:
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/nad11.png)
 
 # классический Loweless
 
@@ -16,19 +42,9 @@
 
 Lowess метод, принимает X,Y - выборку, MAX - кол-во итераций, h - коэф. сглаживания, ro - метрику, K и K1 - функции ядер
 ```
-lowess(X,Y, MAX, h, K, K1, ro=euclidean):
+lowess(X,Y, MAX, h, K, K1, ro=euclidean)
 ```
 
-Метод Надарая-Ватсона, принимает X,Y - выборку, h - коэф. сглаживания, ro - метрику, K - функция ядра
-```
-nadaray(X,Y, h, K, ro=euclidean):
-```
-
-выборки содержатся в файле **data.py**, для вызова - воспользуйтесь командой 
-```
-X,Y = data.DataBuilder().Build("имя выборки")
-```
-имена выборок: "poisson", "wavelet",degenerate"
 
 Посмотрим как отрабатывают оба алгоритма:
 
