@@ -51,6 +51,14 @@ nadaray(X,Y, h, K, ro=euclidean)
 на выборке "degenerate", ошибка:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/nad33.png)
 
+#### пример на реальной выборке **power_plant_data**
+
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/d1.png)
+
+на выборке "degenerate", ошибка:
+![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/dd1.png)
+
+
 # Loweless
 
 можно посчитать новые Y по формуле Надарая-Ватсона:
