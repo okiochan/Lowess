@@ -55,7 +55,7 @@ nadaray(X,Y, h, K, ro=euclidean)
 
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/d1.png)
 
-на выборке "degenerate", ошибка:
+на выборке "power_plant_data", ошибка:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/dd1.png)
 
 
