@@ -58,7 +58,6 @@ nadaray(X,Y, h, K, ro=euclidean)
 на выборке "power_plant_data", ошибка:
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/dd1.png)
 
-
 # Loweless
 
 можно посчитать новые Y по формуле Надарая-Ватсона:
@@ -100,4 +99,7 @@ lowess(X,Y, MAX, h, K, K1, ro=euclidean)
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/Figure_1.png)
 ![](https://raw.githubusercontent.com/okiochan/Lowess/master/img/Figure_2.png)
 
+
+Вывод: Мы видим, что Надарай - Ватсон с квартическим ядром сглаживает выборку лучше, чем Надарай-Ватсон с гауссовским ядром. Пример с выборкой "power_plant_data" это хорошо демонстрирует и ошибка SSE меньше с квартическим ядром, чем с гауссовским. 
+Ловесс сглаживает выборку еще сильнее, чем метод Надарая-Ватсона, видно на контрольной выборке на выборке "degenerate", на остальных же выборках Ловесс очень близок к методу Надарая-Ватсона.
 
